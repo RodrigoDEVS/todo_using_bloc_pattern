@@ -12,6 +12,19 @@ class TasksScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
         ],
       ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: const [
+          Center(
+            child: Chip(label: Text('Tareas: ')),
+          )
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        tooltip: 'Agregar Tarea',
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
